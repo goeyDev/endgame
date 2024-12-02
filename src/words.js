@@ -4,7 +4,7 @@ export const words = [
   {
     id: 1,
     name: "elephant",
-    imgUrl: "/endgame/public/elephant.webp",
+    imgUrl: "/endgame/elephant.webp",
   },
   // {
   //   id: 2,
