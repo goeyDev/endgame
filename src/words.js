@@ -43,7 +43,7 @@ export const words = [
   },
   {
     id: 9,
-    name: "komodo Dragon",
+    name: "komododragon",
     imgUrl: "/endgame/komodo-dragon.jpg",
   },
   {
@@ -73,7 +73,7 @@ export const words = [
   },
   {
     id: 15,
-    name: "pygmy hippopotamus",
+    name: "hippopotamus",
     imgUrl: "/endgame/pygmy-hippopotamus.jpg",
   },
   {
