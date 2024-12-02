@@ -185,11 +185,11 @@ function AssemblyEndgame() {
       {/* <img src={`/images${currentWord.imgUrl}`} alt="Dynamic Image" /> */}
           {/* <img src={process.env.PUBLIC_URL + '/yourPathHere.jpg'} />  */}
           <img src={currentWord.imgUrl} width={300}/>
-          {console.log("currentWord.imgUrl:",currentWord.imgUrl)}
+         
         </div>
-        <div>
+        {/* <div>
         <img src={test} width="300" alt="Pygmy Hippopotamus" />
-        </div>
+        </div> */}
       <section className="sr-only" aria-live="polite" role="status">
         <p>{currentWord.name.includes(lastGuessedLetter) ? `Correct! The letter ${lastGuessedLetter} is in the word.`
         :`Sorry,The letter ${lastGuessedLetter} is not in the word.`}
