@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { languages } from "./languages";
-
+import test from '../public/pygmy-hippopotamus.jpg'
 import { getFarewellText,getRandomWord } from "./utils";
 import { clsx } from "clsx";
 import "./App.css";
@@ -181,7 +181,14 @@ function AssemblyEndgame() {
       <section className="language-chips">{languageElements}</section>
       <section className="word">{letterElements}</section>
       <div className="images">
+      {/* <img src={`${import.meta.env.PUBLIC_URL}${currentWord.imgUrl}`} /> */}
+      {/* <img src={`/images${currentWord.imgUrl}`} alt="Dynamic Image" /> */}
+          {/* <img src={process.env.PUBLIC_URL + '/yourPathHere.jpg'} />  */}
           <img src={currentWord.imgUrl} width={300}/>
+          {console.log("currentWord.imgUrl:",currentWord.imgUrl)}
+        </div>
+        <div>
+        <img src={test} width="300" alt="Pygmy Hippopotamus" />
         </div>
       <section className="sr-only" aria-live="polite" role="status">
         <p>{currentWord.name.includes(lastGuessedLetter) ? `Correct! The letter ${lastGuessedLetter} is in the word.`
