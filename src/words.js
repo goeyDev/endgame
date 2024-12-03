@@ -99,106 +99,106 @@ export const words = [
   {
     id: 20,
     name: "koala",
-    imgUrl: "/endgame/koala.jpg",
+    imgUrl: "/endgame/koala.webp",
   },
-//   {
-//     id: 21,
-//     name: "Binturong",
-//     imgUrl: "/binturong.png",
-//   },
-//   {
-//     id: 22,
-//     name: "Mongoose",
-//     imgUrl: "/mongoose.png",
-//   },
-//   {
-//     id: 23,
-//     name: "Clouded Leopard",
-//     imgUrl: "/clouded-leopard.png",
-//   },
-//   {
-//     id: 24,
-//     name: "Macaw",
-//     imgUrl: "/macaw.png",
-//   },
-//   {
-//     id: 25,
-//     name: "Red Panda",
-//     imgUrl: "/red-panda.png",
-//   },
-//   {
-//     id: 26,
-//     name: "Water Buffalo",
-//     imgUrl: "/water-buffalo.png",
-//   },
-//   {
-//     id: 27,
-//     name: "Swan",
-//     imgUrl: "/swan.png",
-//   },
-//   {
-//     id: 28,
-//     name: "Malayan Tiger",
-//     imgUrl: "/malayan-tiger.png",
-//   },
-//   {
-//     id: 29,
-//     name: "Hornbill",
-//     imgUrl: "/hornbill.png",
-//   },
-//   {
-//     id: 30,
-//     name: "Warthog",
-//     imgUrl: "/warthog.png",
-//   },
-//   {
-//     id: 31,
-//     name: "Bengal Tiger",
-//     imgUrl: "/bengal-tiger.png",
-//   },
-//   {
-//     id: 32,
-//     name: "Okapi",
-//     imgUrl: "/okapi.png",
-//   },
-//   {
-//     id: 33,
-//     name: "Kangaroo Rat",
-//     imgUrl: "/kangaroo-rat.png",
-//   },
-//   {
-//     id: 34,
-//     name: "Arctic Fox",
-//     imgUrl: "/arctic-fox.png",
-//   },
-//   {
-//     id: 35,
-//     name: "Manta Ray",
-//     imgUrl: "/manta-ray.png",
-//   },
-//   {
-//     id: 36,
-//     name: "Gibbon",
-//     imgUrl: "/gibbon.png",
-//   },
-//   {
-//     id: 37,
-//     name: "Jaguar",
-//     imgUrl: "/aguar.png",
-//   },
-//   {
-//     id: 38,
-//     name: "Leopard Tortoise",
-//     imgUrl: "/leopard-tortoise.png",
-//   },
-//   {
-//     id: 39,
-//     name: "Giant Tortoise",
-//     imgUrl: "/giant-tortoise.png",
-//   },
-//   {
-//     id: 40,
-//     name: "Kingfisher",
-//     imgUrl: "/kingfisher.png",
-//   },
+  {
+    id: 21,
+    name: "binturong",
+    imgUrl: "/endgame/binturong.webp",
+  },
+  {
+    id: 22,
+    name: "mongoose",
+    imgUrl: "/endgame/mongoose.jpg",
+  },
+  {
+    id: 23,
+    name: "alpaca",
+    imgUrl: "/endgame/alpaca.jpg",
+  },
+  {
+    id: 24,
+    name: "macaw",
+    imgUrl: "/endgame/macaw.jpg",
+  },
+  {
+    id: 25,
+    name: "redpanda",
+    imgUrl: "/endgame/redpanda.jpg",
+  },
+  {
+    id: 26,
+    name: "buffalo",
+    imgUrl: "/endgame/buffalo.jpg",
+  },
+  {
+    id: 27,
+    name: "swan",
+    imgUrl: "/endgame/swan.jpg",
+  },
+  {
+    id: 28,
+    name: "ant",
+    imgUrl: "/endgame/ant.jpg",
+  },
+  {
+    id: 29,
+    name: "hornbill",
+    imgUrl: "/endgame/hornbill.jpg",
+  },
+  {
+    id: 30,
+    name: "warthog",
+    imgUrl: "/endgame/warthog.webp",
+  },
+  {
+    id: 31,
+    name: "bear",
+    imgUrl: "/endgame/bear.webp",
+  },
+  {
+    id: 32,
+    name: "okapi",
+    imgUrl: "/endgame/okapi.jpg",
+  },
+  {
+    id: 33,
+    name: "rat",
+    imgUrl: "/endgame/rat.jpg",
+  },
+  {
+    id: 34,
+    name: "fox",
+    imgUrl: "/endgame/fox.jpg",
+  },
+  {
+    id: 35,
+    name: "owl",
+    imgUrl: "/endgame/owl.jpg",
+  },
+  {
+    id: 36,
+    name: "gibbon",
+    imgUrl: "/endgame/gibbon.jpg",
+  },
+  {
+    id: 37,
+    name: "jaguar",
+    imgUrl: "/endgame/aguar.jpg",
+  },
+  {
+    id: 38,
+    name: "vulture",
+    imgUrl: "/endgame/vulture.png",
+  },
+  {
+    id: 39,
+    name: "tortoise",
+    imgUrl: "/endgame/tortoise.jpg",
+  },
+  {
+    id: 40,
+    name: "kingfisher",
+    imgUrl: "/endgame/kingfisher.jpg",
+  },
 ];
