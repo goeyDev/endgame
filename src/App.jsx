@@ -1,7 +1,7 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { languages } from "./languages";
-import test from '../public/pygmy-hippopotamus.jpg'
-import { getFarewellText,getRandomWord } from "./utils";
+import test from "../public/pygmy-hippopotamus.jpg";
+import { getFarewellText, getRandomWord } from "./utils";
 import { clsx } from "clsx";
 import "./App.css";
 import Confetti from "react-confetti";
@@ -9,11 +9,9 @@ import Confetti from "react-confetti";
 // 134155 functionality
 // 141214
 function AssemblyEndgame() {
- 
   // state values
   const [currentWord, setcurrentWord] = useState(getRandomWord());
   const [guessedLetters, setGuessedLetters] = useState([]);
-
 
   // Derived values
   const numGuessesLeft = languages.length - 1;
@@ -57,7 +55,7 @@ function AssemblyEndgame() {
       backgroundColor: lang.backgroundColor,
       color: lang.color,
     };
-    const className = clsx("chip", isLanguageLost && "lost")
+    const className = clsx("chip", isLanguageLost && "lost");
     // const className = clsx("chip");
     return (
       <span className={className} key={lang.name} style={styles}>
@@ -67,21 +65,17 @@ function AssemblyEndgame() {
   });
 
   // display the letter on the screen
-  const letterElements = currentWord.name
-    .split("")
-    .map((letter, index) => {
-      const shouldRevealLetter = isGameLost || guessedLetters.includes(letter)
-      const letterClassName = clsx(
-        isGameLost && !guessedLetters.includes(letter) && "missed-letter"
-      )
-      return(
-        <span key={index} className={letterClassName}>
-          { shouldRevealLetter ? letter.toUpperCase() : ""}
-        </span>
-      )
-      
-    });
-      
+  const letterElements = currentWord.name.split("").map((letter, index) => {
+    const shouldRevealLetter = isGameLost || guessedLetters.includes(letter);
+    const letterClassName = clsx(
+      isGameLost && !guessedLetters.includes(letter) && "missed-letter"
+    );
+    return (
+      <span key={index} className={letterClassName}>
+        {shouldRevealLetter ? letter.toUpperCase() : ""}
+      </span>
+    );
+  });
 
   const keyboardElements = alphabet.split("").map((letter) => {
     const isGuessed = guessedLetters.includes(letter);
@@ -141,16 +135,16 @@ function AssemblyEndgame() {
     return null;
   }
 
-  function startNewGame(){
-    setcurrentWord(getRandomWord())
-    setGuessedLetters([])
+  function startNewGame() {
+    setcurrentWord(getRandomWord());
+    setGuessedLetters([]);
   }
 
   // recycle={false}
   // numberOfPieces={1000}
 
   useEffect(() => {
-    const music = new Audio('Rich18.mp3');
+    const music = new Audio("Rich18.mp3");
     music.loop = true;
     music.play();
 
@@ -159,14 +153,10 @@ function AssemblyEndgame() {
       music.pause();
     };
   }, [isGameWon]);
-  
+
   return (
     <main>
-
-      {
-        isGameWon && <Confetti
-        />
-      }
+      {isGameWon && <Confetti />}
       <header>
         <h1>Assembly: Endgame</h1>
         <p>
@@ -181,26 +171,31 @@ function AssemblyEndgame() {
       <section className="language-chips">{languageElements}</section>
       <section className="word">{letterElements}</section>
       <div className="images">
-      {/* <img src={`${import.meta.env.PUBLIC_URL}${currentWord.imgUrl}`} /> */}
-      {/* <img src={`/images${currentWord.imgUrl}`} alt="Dynamic Image" /> */}
-          {/* <img src={process.env.PUBLIC_URL + '/yourPathHere.jpg'} />  */}
-          <img src={currentWord.imgUrl} width={300}/>
-         
-        </div>
-        {/* <div>
-        <img src={test} width="300" alt="Pygmy Hippopotamus" />
-        </div> */}
+        <img src={currentWord.imgUrl} width={300} />
+      </div>
       <section className="sr-only" aria-live="polite" role="status">
-        <p>{currentWord.name.includes(lastGuessedLetter) ? `Correct! The letter ${lastGuessedLetter} is in the word.`
-        :`Sorry,The letter ${lastGuessedLetter} is not in the word.`}
-        You have {numGuessesLeft} attempts left.
+        <p>
+          {currentWord.name.includes(lastGuessedLetter)
+            ? `Correct! The letter ${lastGuessedLetter} is in the word.`
+            : `Sorry,The letter ${lastGuessedLetter} is not in the word.`}
+          You have {numGuessesLeft} attempts left.
         </p>
-
-
-      <p>Current word:{currentWord.name.split("").map(letter => guessedLetters.includes(letter) ? letter + "." : "blank.").join("")}</p>
+        <p>
+          Current word:
+          {currentWord.name
+            .split("")
+            .map((letter) =>
+              guessedLetters.includes(letter) ? letter + "." : "blank."
+            )
+            .join("")}
+        </p>
       </section>
       <section className="keyboard">{keyboardElements}</section>
-      {isGameOver && <button className="new-game" onClick={startNewGame}>New Game</button>}
+      {isGameOver && (
+        <button className="new-game" onClick={startNewGame}>
+          New Game
+        </button>
+      )}
     </main>
   );
 }

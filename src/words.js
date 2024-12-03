@@ -83,8 +83,8 @@ export const words = [
   },
   {
     id: 17,
-    name: "leopard",
-    imgUrl: "/endgame/leopard.jpg",
+    name: "duck",
+    imgUrl: "/endgame/duck.jpg",
   },
   {
     id: 18,
@@ -138,8 +138,8 @@ export const words = [
   },
   {
     id: 28,
-    name: "ant",
-    imgUrl: "/endgame/ant.jpg",
+    name: "rabbit",
+    imgUrl: "/endgame/rabbit.jpg",
   },
   {
     id: 29,

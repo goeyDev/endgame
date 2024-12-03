@@ -112,6 +112,7 @@ section.keyboard {
   gap: 8px;
   justify-content: center;
   max-width: 450px;
+  
 }
 
 section.keyboard button {
@@ -119,7 +120,9 @@ section.keyboard button {
   width: 50px;
   background-color: #fcba29;
   border: 1px solid #d7d7d7;
-  border-radius: 3px;
+  border-radius: 10px;
+  font-weight:bold;
+  font-size:20px;
   cursor: pointer;
 }
 
@@ -144,10 +147,10 @@ span.chip.lost::before {
   justify-content: center;
   /* height: 100%;
   width: 100%;
-  font-size: 0.85rem;
   top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);  */
+  left: 0;*/
+  font-size: 0.85rem;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 button.new-game{
